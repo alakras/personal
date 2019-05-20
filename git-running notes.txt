@@ -1,0 +1,54 @@
+https://git-scm.com/book/en/v1/Getting-Started-First-Time-Git-Setup
+
+on windows .gitconfig file is located at C:\Users\alakras
+to list the content of this file on git bash use command 'git config --list'
+if you want to see what value a key holds use command 'git config user.name'
+
+show/demo how to 
+configure and initalize a repo. - done
+begin and stop tracking the files
+stage and commit changes
+how to see chnages between commits
+how to browse history of your project
+how to push and pull from remote directories
+
+it looks like it's important to know few vi editor or bash commands, i had learnt it many years ago in fact i learn C and C++ on unix in vi editor.
+
+we need to use 'git add <filename>' command to start tracking/version controlling a file, when we 'add' a file
+we started version controlling it as well as we stage it so that it become ready to get committed.
+
+git status is the command that we need to keep running in bash...
+
+gitingone can be revisited later, not important at this stage
+
+'git diff' is command which shows exact differenece with your staged and unstaged changes
+there are two version of git diff 1)git diff HEAD and 2)git diff cached 	
+-----------------------------------------------------
+after a long time i revisited git bash but then was unable to find out whether i am still mapped to repository?
+opend git bash commandline editor and then i was blank what to do.
+then first to know where i am used 'pwd' command then i was on '/', after googled got to know that i should be on home directory so used command 'cd ~' and then i was on my user directory (checked with pwd command again)
+later found that when you do 'git init' it crates an .git hidden folder and it become your repository
+------------------------------
+20-may-19
+we need to cd ~ to get into home direcotry, do git init.... then asked sequence to roma on what is our standard process
+
+1. use 'git branch' to see on what currently you are ... i am on master branch
+2. get the latest code by ' git pull origin master' this will get all latest code from master branch
+3. now create a new branch on which you are going to work 'git branch feature\lmp-1149'
+4. give 'git branch' command you will see master and newly created branch, with asterisk on master, meaning you are still on master branch
+5  get on newly creted branch with 'git checkout feature\lmp-1149' 
+6. again give 'git branch' command and now asterrisk is moved from master to new branch
+7. modify the content of a file on your local machine
+8. give 'git status' command to check which file is modifed
+9. give 'git diff filename' command to verify differences.
+10. 'git add filename' by this  you are adding files in queue which can be commited later.
+11. do 'git commit' and file added in earlier step will get commited, remember still content are on yet not pushed to github repository. it will open editor for commit comments.
+12. 'git log -2' to verify changes are in correct branch with correct email id
+13. to push your commited content to git hub repository 'git push origin featureLMP-11941'
+14. then in git hub go to new branch and create pull request for review
+15 reviewer will add his comment
+16 modify your local code, add , commit, push again -> reviewer will check if changes are made as he wishes
+17 meanwhile get latest from master branch because someone might have done some changes using 'git pull origin master'
+18. your approved branch will be deployed to respective environment throught jenkins
+19 after successful release your branch will be merged to master so that next time if anyone do get latest he get your changes.
+
