@@ -51,4 +51,26 @@ we need to cd ~ to get into home direcotry, do git init.... then asked sequence 
 17 meanwhile get latest from master branch because someone might have done some changes using 'git pull origin master'
 18. your approved branch will be deployed to respective environment throught jenkins
 19 after successful release your branch will be merged to master so that next time if anyone do get latest he get your changes.
+------------------------------
+21-may-19
+need to see today about TFS (TFVC) as repository, we already have one repository present on cybage central repository
+https://almtfs.cybage.com
+finally was able to create a repository in TFS repository
+1. first get connected to your TFS server
+2. go to source control explorer
+3. add a folder
+4. map it to a local folder where your solution is present to map you have add a workspce it your local folder is not at location of already mapped folder
+5. to map a folder File ->source control->advanced->workspaces and do the mapping
+6. go to local folder and selected all files and right click to select 'Add' , you will see green mark to all these folder.
+7. go to source control explorer and selecte all files, right click and say check in. / go to pending changes and do check in 
+8. you will see all your files and folder are present in version contorl.
 
+https://www.youtube.com/watch?v=105VDFd9-ok
+https://www.youtube.com/watch?v=xJ7zaWfL6Bo
+
+now i was trying to check in this modification done in file in git hub, but then faced problem that 
+doing cd ~ it moved it to some z drive, then i needed to use cd command to get navigated to 'personal' folder.
+then i did 'git add filename' and then git status but it showned nothing
+then realized i am not connected to git as vpn is not on.
+
+https://stackoverflow.com/questions/18322791/tfs-code-reviews-show-updated-files-in-response-to-comments
