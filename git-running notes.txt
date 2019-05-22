@@ -74,3 +74,8 @@ then i did 'git add filename' and then git status but it showned nothing
 then realized i am not connected to git as vpn is not on.
 
 https://stackoverflow.com/questions/18322791/tfs-code-reviews-show-updated-files-in-response-to-comments
+
+22 -may-19
+good small video on branches and merges in TFS
+
+https://www.youtube.com/watch?v=_jtCVuLuoIQ
